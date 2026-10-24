@@ -1,0 +1,24 @@
+Pop! Buddy 隱私權政策網站（中英文）
+
+1. 必須先完成的事
+- 使用記事本、VS Code 或其他文字編輯器開啟 index.html。
+- 搜尋 [ADD_YOUR_CONTACT_EMAIL]，把兩個位置替換成你願意公開接收隱私詢問的電子郵件地址。
+- 按實際 App 功能核對所有政策文字。此版本假設「不需玩家登入；遊戲可能使用 Google AdMob」。如實際已用 Firebase、登入、雲端儲存、分析 SDK，必須補上正確敘述。
+- 如果 App 主要面向兒童，應先確認 Apple 兒童類別及適用法規的特殊限制，並檢查 AdMob 設定是否符合規定。
+
+2. 上傳網站
+- 到 https://app.netlify.com/drop
+- 建議先登入免費 Netlify 帳號，確保可以長期管理你的網站。
+- 將整個 PopBuddy_Privacy_Site 資料夾拖進上傳區（也可以只上傳 index.html）。
+- 上傳後會取得一個實際的 https://...netlify.app 網址。
+- 從無痕瀏覽器測試網址是否可公開閱讀，且英文與繁中切換正常。
+
+3. 回 App Store Connect
+- 隱私權政策 URL：填剛剛取得的實際網站連結，通常是 https://xxxx.netlify.app/
+- 使用者隱私權選擇 URL：目前是選填，可留空。
+- 若要填可使用 https://xxxx.netlify.app/#en-choices 連到選擇說明，但它僅是文字說明，並不是可直接執行刪除的功能。要與 App 的實際資料權利申請流程一致。
+
+4. 其他要注意
+- Apple 另要求 App 本身可輕鬆找到隱私權政策連結（例如設定或首頁資訊）。
+- App Store Connect「App 隱私權」資料收集問卷也要依實際 SDK 情況填寫，單純有政策網址不等於完成隱私設定。
+- 請勿使用本機檔案路徑 file:// 或範例網址替代公開 URL。
